@@ -106,11 +106,11 @@ th {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  gap: 10px; /* espaçamento entre input e botão */
+  gap: 10px; 
 }
 
 .search-container input {
-  flex: 1; /* ocupa todo o espaço disponível */
+  flex: 1;
   padding: 10px 15px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -120,14 +120,14 @@ th {
 }
 
 .search-container input:focus {
-  border-color: #3f51b5; /* cor ao focar */
+  border-color: #3f51b5; 
   box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
 }
 
 .search-container button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #3f51b5; /* azul moderno */
+  background-color: #3f51b5; 
   color: white;
   border: none;
   border-radius: 8px;
@@ -136,5 +136,5 @@ th {
 }
 
 .search-container button:hover {
-  background-color: #303f9f; /* escurece ao passar o mouse */
+  background-color: #303f9f; 
 }
