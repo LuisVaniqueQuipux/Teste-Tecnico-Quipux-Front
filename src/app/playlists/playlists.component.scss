@@ -1,0 +1,140 @@
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-add {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.btn-add:hover {
+  background-color: #45a049;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #1976d2;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+td ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+td li {
+  margin-bottom: 5px;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .btn-add, .btn-delete {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+th {
+  background-color: #1976d2;
+  color: black; /* Alterado para preto */
+  text-align: left;
+  padding: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px; /* espaçamento entre input e botão */
+}
+
+.search-container input {
+  flex: 1; /* ocupa todo o espaço disponível */
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container input:focus {
+  border-color: #3f51b5; /* cor ao focar */
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3f51b5; /* azul moderno */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #303f9f; /* escurece ao passar o mouse */
+}

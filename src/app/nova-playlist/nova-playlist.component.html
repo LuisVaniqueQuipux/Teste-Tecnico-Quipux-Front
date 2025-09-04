@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Criar Nova Playlist</h2>
+
+  <label>Nome da Playlist</label>
+  <input [(ngModel)]="nome" />
+
+  <label>Descrição</label>
+  <input [(ngModel)]="descricao" />
+
+  <h3>Adicionar Música</h3>
+  <label>Título</label>
+  <input [(ngModel)]="tituloMusica" />
+
+  <label>Artista</label>
+  <input [(ngModel)]="artista" />
+
+  <label>Álbum</label>
+  <input [(ngModel)]="album" />
+
+  <label>Ano</label>
+  <input type="number" [(ngModel)]="ano" />
+
+  <label>Gênero</label>
+  <input [(ngModel)]="genero" />
+
+  <button (click)="adicionarMusica()">Adicionar Música</button>
+
+  <h3>Músicas Adicionadas</h3>
+  <ul>
+    <li *ngFor="let m of musicas">
+      {{m.titulo}} - {{m.artista}} ({{m.ano}})
+      <button (click)="removerMusica(m)">❌</button>
+    </li>
+  </ul>
+
+  <button (click)="salvarPlaylist()">Salvar Playlist</button>
+</div>

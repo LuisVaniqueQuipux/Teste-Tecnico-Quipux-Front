@@ -1,6 +1,17 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideRouter, Routes } from '@angular/router';
 import { AppComponent } from './app/app.component';
+import { PlaylistsComponent } from './app/playlists/playlists.component';
+import { NovaPlaylistComponent } from './app/nova-playlist/nova-playlist.component';
+import { importProvidersFrom } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+const routes: Routes = [
+  { path: '', redirectTo: 'playlist', pathMatch: 'full' }, 
+  { path: 'playlist', component: PlaylistsComponent },
+  { path: 'nova-playlist', component: NovaPlaylistComponent }
+];
+
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(routes), importProvidersFrom(HttpClientModule)]
+});
